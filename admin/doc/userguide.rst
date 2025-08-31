@@ -31,13 +31,13 @@ an explicit method that compute iteratively :math:`X(t_{n+1})` from
 :math:`X(t_n)`. The result at time t is :math:`X(t) = X(t_n) =
 X(t_0+n*h)` where :math:`h` is the integration time step.
 
-The package ``solver`` of ``galuma.net/systemd/ode`` provides the core
-function to execute this procedure. First of all, you need to import
-the package in your go program:
+The package ``solver`` of ``github.com/gboulant/dingo-ode`` provides the
+core function to execute this procedure. First of all, you need to
+import the package in your go program:
 
 .. code-block:: go
 
-   import "galuma.net/systemd/ode/solver"
+   import "github.com/gboulant/dingo-ode/solver"
 
 Then, you have to provide an implementation of the function
 :math:`f(X,t)`. The only requirement is the interface:

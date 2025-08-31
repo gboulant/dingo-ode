@@ -59,16 +59,16 @@ The result at time :math:`t` is:
 
 Where :math:`h` is the integration time step.
 
-Usage of ``galuma.net/systemd/ode`` (1/3)
-=========================================
+Usage of ``github.com/gboulant/dingo-ode`` (1/3)
+================================================
 
-The package ``solver`` of ``galuma.net/systemd/ode`` provides the core
-function to execute this procedure. First of all, you need to import
-the package in your go program:
+The package ``solver`` of ``github.com/gboulant/dingo-ode`` provides the
+core function to execute this procedure. First of all, you need to
+import the package in your go program:
 
 .. code-block:: go
 
-   import "galuma.net/systemd/ode/solver"
+   import "github.com/gboulant/dingo-ode/solver"
 
 Then, you have to provide an implementation of the function
 :math:`f(X,t)`. The only requirement is the interface:
@@ -87,8 +87,8 @@ Then, you have to provide an implementation of the function
    		return []float64{dx, dv}, nil
    }
 
-Usage of ``galuma.net/systemd/ode`` (2/3)
-=========================================
+Usage of ``github.com/gboulant/dingo-ode`` (2/3)
+================================================
 
 Define the initial condition (t0,X0), the integration step h and some
 additional parameters to specify the stopping condition (a time limit
@@ -101,8 +101,8 @@ tmax in this example):
    h := 0.01
    tmax := 60.0
 
-Usage of ``galuma.net/systemd/ode`` (3/3)
-=========================================
+Usage of ``github.com/gboulant/dingo-ode`` (3/3)
+================================================
 
 You then have to select a solving method and execute the solver with
 all this parameters:
