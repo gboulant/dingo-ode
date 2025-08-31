@@ -1,4 +1,4 @@
-# Solving Dynamical Systems with go**
+# Solving Dynamical Systems with go
 
 **contact**: [Guillaume Boulant](mailto:gboulant@gmail.com?subject=dingo-ode)
 
